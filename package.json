@@ -1,0 +1,23 @@
+{
+  "name": "2kvibes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"shopify theme dev -e dev\" \"npx @tailwindcss/cli -i ./assets/tailwind.input.css -o ./assets/tailwind.output.css --watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "laravel-mix": "^6.0.49",
+    "tailwindcss": "^4.0.9"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "@tailwindcss/postcss": "^4.0.9",
+    "postcss": "^8.5.3"
+  }
+}
