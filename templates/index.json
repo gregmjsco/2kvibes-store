@@ -110,7 +110,7 @@
     "all-products": {
       "type": "featured-collection",
       "settings": {
-        "title": "特集コレクション",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": true,
