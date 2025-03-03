@@ -9,6 +9,104 @@
  */
 {
   "sections": {
+    "vibes_carousel_GgKht6": {
+      "type": "vibes-carousel",
+      "blocks": {
+        "product_kK67DE": {
+          "type": "product",
+          "settings": {
+            "product": "snooze-three-panel-fleece-hoodie",
+            "title": ""
+          }
+        },
+        "product_66jA6n": {
+          "type": "product",
+          "settings": {
+            "product": "g-o-a-t-crop-hoodie",
+            "title": ""
+          }
+        },
+        "product_RnpQCR": {
+          "type": "product",
+          "settings": {
+            "product": "savage-unisex-jersey-short-sleeve-tee",
+            "title": ""
+          }
+        },
+        "product_7jkAcq": {
+          "type": "product",
+          "settings": {
+            "product": "snooze-crop-hoodie",
+            "title": ""
+          }
+        },
+        "product_tXt6jz": {
+          "type": "product",
+          "settings": {
+            "product": "sticky-unisex-jersey-short-sleeve-tee",
+            "title": ""
+          }
+        },
+        "product_VmKei8": {
+          "type": "product",
+          "settings": {
+            "product": "unfair-fleece-hoodie-three-panel-streetwear-with-cool-angel-design",
+            "title": ""
+          }
+        },
+        "product_hUDx6c": {
+          "type": "product",
+          "settings": {
+            "product": "make-you-mine-crop-hoodie",
+            "title": ""
+          }
+        },
+        "product_NKwGcF": {
+          "type": "product",
+          "settings": {
+            "product": "bling-bling-unisex-graphic-tee-with-unique-design-casual-streetwear",
+            "title": ""
+          }
+        },
+        "product_gcgqKA": {
+          "type": "product",
+          "settings": {
+            "product": "savage-crop-hoodie",
+            "title": ""
+          }
+        },
+        "product_rbAiNU": {
+          "type": "product",
+          "settings": {
+            "product": "bling-bling-trendy-three-panel-fleece-hoodie-with-unique-art-design",
+            "title": ""
+          }
+        },
+        "product_hkQREG": {
+          "type": "product",
+          "settings": {
+            "product": "sticky-three-panel-fleece-hoodie",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_kK67DE",
+        "product_66jA6n",
+        "product_RnpQCR",
+        "product_7jkAcq",
+        "product_tXt6jz",
+        "product_VmKei8",
+        "product_hUDx6c",
+        "product_NKwGcF",
+        "product_gcgqKA",
+        "product_rbAiNU",
+        "product_hkQREG"
+      ],
+      "settings": {
+        "number_slider_desktop": 3
+      }
+    },
     "all-products": {
       "type": "featured-collection",
       "settings": {
@@ -39,6 +137,7 @@
     }
   },
   "order": [
+    "vibes_carousel_GgKht6",
     "all-products"
   ]
 }
