@@ -35,14 +35,15 @@
         gap: 16px;
     }
     .glider__container {
+        position: relative;
         margin: 0 auto;
     }
 
     .glider__container .prev,
     .glider__container .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%); 
 
         background: white;
         border: 1px solid black;
@@ -52,6 +53,7 @@
         cursor: pointer;
 
         display: none;
+        z-index: 666;
 
     }
 
@@ -71,7 +73,9 @@
     @media (min-width: 700px) {
         .glider__container .prev,
         .glider__container .next {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
