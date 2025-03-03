@@ -39,6 +39,15 @@
             "swatch_shape": "circle"
           }
         },
+        "collapsible_tab_HwmHyk": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Chart",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
         "quantity-selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -65,6 +74,7 @@
         "price",
         "description",
         "variant-picker",
+        "collapsible_tab_HwmHyk",
         "quantity-selector",
         "buy_buttons",
         "product-inventory"
