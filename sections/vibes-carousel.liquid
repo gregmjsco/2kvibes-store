@@ -85,7 +85,7 @@
         {% for block in section.blocks %}
             {% if block.type == "product" %}
                 <a href="{{ block.settings.product.url }}" class="carousel-card">
-                    {{ block.settings.product.featured_image | image_url: width: 529 |  image_tag: class: 'card__image' }}
+                    {{ block.settings.product.featured_image | image_url: width: 4000 |  image_tag: class: 'card__image' }}
                     <p class="card__title">{{ block.settings.title | default: block.settings.product.title }}</p>
                     <p class="card__price">{{ block.settings.product.price | money_with_currency}}</p>
                 </a>
@@ -127,7 +127,7 @@
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 5,
+                        slidesToShow: 3,
                     }
                 }
              ]
