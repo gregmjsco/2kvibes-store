@@ -13,6 +13,44 @@
         --blending: hard-light;
     }
 
+    @keyframes moveInCircle {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes moveVertical {
+        0% {
+            transform: translateY(-50%);
+        }
+        50% {
+            transform: translateY(50%);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    @keyframes moveHorizontal {
+        0% {
+            transform: translateX(-50%) translateY(-10%);
+        }
+        50% {
+            transform: translateX(50%) translateY(10%); 
+        }
+        100% {
+            transform: translateX(-50%) translateY(-10%);
+        }
+    }
+
+
+
     .gradient-bg {
         width: 100vw;
         height: 100vh;
@@ -43,6 +81,9 @@
         top: calc(50% - var(--circle-size) / 2);
         left: calc(50% - var(--circle-size) / 2);
 
+        transform-origin: center center;
+        animation: moveVertical 30s ease infinite;
+
         opacity: 1;
         z-index: 1;
     }
@@ -56,6 +97,9 @@
         height: var(--circle-size);
         top: calc(50% - var(--circle-size) / 2);
         left: calc(50% - var(--circle-size) / 2);
+
+        transform-origin: calc(50% - 400px);
+        animation: moveInCircle 20s reverse infinite;
 
         opacity: 1;
         z-index: 1;
@@ -71,6 +115,9 @@
         top: calc(50% - var(--circle-size) / 2 + 200px);
         left: calc(50% - var(--circle-size) / 2 - 500px);
 
+        transform-origin: calc(50% + 400px);
+        animation: moveInCircle 40s linear infinite;
+
         opacity: 1;
         z-index: 1;
     }
@@ -84,6 +131,9 @@
         height: var(--circle-size);
         top: calc(50% - var(--circle-size) / 2);
         left: calc(50% - var(--circle-size) / 2);
+
+        transform-origin: calc(50% - 200px);
+        animation: moveHorizontal 40s ease infinite;
 
         opacity: 0.7;
         z-index: 1;
@@ -99,10 +149,13 @@
         top: calc(50% - var(--circle-size));
         left: calc(50% - var(--circle-size));
 
+        transform-origin: calc(50% - 800px) calc(50% + 200px);
+        animation: moveInCircle 20s ease infinite;
+
         opacity: 1;
         z-index: 1;
     }
-    
+
 </style>
 
 <div class="gradient-bg">
