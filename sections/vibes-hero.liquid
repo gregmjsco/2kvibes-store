@@ -1,6 +1,6 @@
 <style>
     .container-hero {
-        height: 100vh;
+        height: 80vh;
         width: 100vw;
         display: grid;
         place-items: center;
@@ -21,21 +21,18 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // console.log('DOM fully loaded and parsed');
-        // splt({
-        //     targets: '.splt';
-        // });
-        splt({});
-
-        // console.log(document.querySelectorAll('.char'));
+        splt({
+            reveal: true
+        });
     
         anime({
-            targets: '.char',
-  translateY: [0, 40],
-  direction: 'alternate',
-  loop: true,
-  delay: anime.stagger(50),
-    });
+            targets: '.reveal',
+            translateY: [0, 20],
+            direction: 'alternate',
+            loop: true,
+            delay: anime.stagger(25),
+            easing: 'cubicBezier(.71,-0.77,.43,1.67)'
+         });
     })
 
 </script>
