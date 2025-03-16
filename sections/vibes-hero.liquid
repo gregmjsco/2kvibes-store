@@ -12,7 +12,6 @@
         line-height: 72px;
         color: #0b0431;
     }
-
 </style>
 
 <div class="container-hero">
@@ -21,18 +20,19 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        splt({
-            reveal: true
-        });
+
     
         anime({
-            targets: '.reveal',
-            translateY: [0, 20],
-            direction: 'alternate',
-            loop: true,
-            delay: anime.stagger(25),
-            easing: 'cubicBezier(.71,-0.77,.43,1.67)'
-         });
+            begin: splt({}),
+            targets: '.char',
+            opacity: [0,1],
+            scale: [1, 1.5],
+            delay: anime.stagger(50),
+            easing: 'cubicBezier(.71,-0.77,.43,1.67)',
+            complete: () => {
+                splt.revert();
+            },
+        });
     })
 
 </script>
