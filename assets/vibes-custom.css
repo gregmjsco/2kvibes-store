@@ -6,10 +6,34 @@
   background: transparent !important;
 }
 
+#collection-template--21994949672983__all-products {
+  background: transparent !important;
+}
+
+#collection-template--22038926229527__all-products {
+  background: transparent !important;
+}
+
+.collection section-template--22038926229527__all-products-padding {
+  background: transparent !important;
+}
+
+.card__information {
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
+
+#shopify-section-template--22038926229527__all-products {
+  background: transparent !important;
+}
+
 .color-scheme-8e34f56b-cf60-48ed-872d-7cb92f1fe842 {
   background: transparent !important;
 }
 
-#collection-template--21994949672983__all-products {
-  background: transparent !important;
+.header {
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
