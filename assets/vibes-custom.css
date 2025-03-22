@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Neuropolitical";
+  src: url("https://cdn.shopify.com/s/files/1/0738/0313/7047/files/Neuropolitical_Rg.woff2?v=1742547190")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .collection {
   background: transparent !important;
 }

@@ -7,92 +7,63 @@
         flex-direction: column;
     }
 
-    h1 {
-        font-family: sans-serif;
-        font-size: 64px;
-        line-height: 72px;
-        color: #0b0431;
-    }
+  
 
-    .ml4 {
-  position: relative;
-  text-align: center;
-  font-weight: 900;
-  font-size: 4.5em;
+    .ml13 {
+        text-align: center;
+        font-family: 'Neuropolitical';
+  font-size: 8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 600;
+  cursor: pointer;
 }
-.ml4 .letters {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0.3em;
-  right: 0;
-  opacity: 0;
-  color: #f4f4f4;
+
+.letter {
+    display: inline-block;
 }
+
+
 </style>
 
 <div class="container-hero">
-    <h1 class="ml4">
-        <span class="letters letters-1">2KVIBES</span>
-        <span class="letters letters-2">Tokyo 東京</span>
-        <span class="letters letters-3">2Kバイブス</span>
+    <h1 class="ml13">
+        2KVIBES
     </h1>   
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        var ml4 = {};
-        ml4.opacityIn = [0,1];
-        ml4.scaleIn = [0.2, 1];
-        ml4.scaleOut = 3;
-        ml4.durationIn = 800;
-        ml4.durationOut = 600;
-        ml4.delay = 500;
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-        anime.timeline({loop: true})
+        
+        anime.timeline({loop: false})
         .add({
-            targets: '.ml4 .letters-1',
-            opacity: ml4.opacityIn,
-            scale: ml4.scaleIn,
-            duration: ml4.durationIn
-        }).add({
-            targets: '.ml4 .letters-1',
-            opacity: 0,
-            scale: ml4.scaleOut,
-            duration: ml4.durationOut,
-            easing: "easeInExpo",
-            delay: ml4.delay
-        }).add({
-            targets: '.ml4 .letters-2',
-            opacity: ml4.opacityIn,
-            scale: ml4.scaleIn,
-            duration: ml4.durationIn
-        }).add({
-            targets: '.ml4 .letters-2',
-            opacity: 0,
-            scale: ml4.scaleOut,
-            duration: ml4.durationOut,
-            easing: "easeInExpo",
-            delay: ml4.delay
-        }).add({
-            targets: '.ml4 .letters-3',
-            opacity: ml4.opacityIn,
-            scale: ml4.scaleIn,
-            duration: ml4.durationIn
-        }).add({
-            targets: '.ml4 .letters-3',
-            opacity: 0,
-            scale: ml4.scaleOut,
-            duration: ml4.durationOut,
-            easing: "easeInExpo",
-            delay: ml4.delay
-        }).add({
-            targets: '.ml4',
-            opacity: 0,
-            duration: 500,
-            delay: 500
+            targets: '.ml13 .letter',
+            translateY: [100,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 300 + 30 * i
         });
-    })
+
+        // document.querySelectorAll('.ml13 .letter').forEach(letter => {
+        //     letter.addEventListener('mouseenter', () => {
+        //         anime({
+        //             targets: '.ml13 .letter',
+        //             translateY: [100,0],
+        //             translateZ: 0,
+        //             opacity: [0,1],
+        //             easing: "easeOutExpo",
+        //             duration: 1400
+        //         })
+        //     })
+        // })
+        })
+
+
 
 </script>
 
