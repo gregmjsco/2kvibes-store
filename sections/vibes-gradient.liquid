@@ -1,41 +1,30 @@
 <style>
 
     :root {
-        --color-bg1: rgb(0, 10, 31);
+        --color-bg1: #e7e7e7;
         --color-bg2: #252423;
-        --color1: 249, 60, 129;
-        --color2: 228, 154, 171;
+        --color1: 18, 18, 23;
+        --color2: 69, 69, 69;
         --color3: 191, 63, 144;
         --color4: 249, 60, 129;
         --color5: 228, 154, 171;
         --color-interactive: 140, 100, 255;
-        --circle-size: 80%;
+        --circle-size: 180%;
         --blending: hard-light;
     }
 
     
 
-    @keyframes moveInCircle {
-        0% {
-            transform: rotate(0deg);
-        }
-        50% {
-            transform: rotate(180deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
 
     @keyframes moveVertical {
         0% {
-            transform: translateY(-50%);
+            transform: translateY(-10%);
         }
         50% {
-            transform: translateY(50%);
+            transform: translateY(10%);
         }
         100% {
-            transform: translateY(-50%);
+            transform: translateY(-10%);
         }
     }
 
@@ -106,45 +95,13 @@
         left: calc(50% - var(--circle-size) / 2);
 
         transform-origin: calc(50% - 400px);
-        animation: moveInCircle 20s reverse infinite;
+        animation: moveHorizontal 18s reverse infinite;
 
         opacity: 1;
         z-index: 1;
     }
 
-    .g3 {
-        position: absolute;
-        background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
-        mix-blend-mode: var(--blending);
-
-        width: var(--circle-size);
-        height: var(--circle-size);
-        top: calc(50% - var(--circle-size) / 2 + 200px);
-        left: calc(50% - var(--circle-size) / 2 - 500px);
-
-        transform-origin: calc(50% + 400px);
-        animation: moveInCircle 40s linear infinite;
-
-        opacity: 1;
-        z-index: 1;
-    }
     
-    .g4 {
-        position: absolute;
-        background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
-        mix-blend-mode: var(--blending);
-
-        width: var(--circle-size);
-        height: var(--circle-size);
-        top: calc(50% - var(--circle-size) / 2);
-        left: calc(50% - var(--circle-size) / 2);
-
-        transform-origin: calc(50% - 200px);
-        animation: moveHorizontal 40s ease infinite;
-
-        opacity: 0.7;
-        z-index: 1;
-    }
 
     
 
@@ -164,8 +121,6 @@
     <div class="gradients-container">
         <div class="g1">&nbsp;</div>
         <div class="g2">&nbsp;</div>
-        <div class="g3">&nbsp;</div>
-        <div class="g4">&nbsp;</div>    
     </div>
 </div>
 
