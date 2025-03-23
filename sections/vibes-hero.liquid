@@ -7,61 +7,75 @@
         flex-direction: column;
     }
 
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: "Neuropolitical";
+        font-size: 12rem
+
+    }
+
   
 
-    .ml13 {
-        text-align: center;
-        font-family: 'Neuropolitical';
-        color: white;
-        font-size: 8em;
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        font-weight: 600;
-}
 
-.letter {
+    
+    @media (prefers-reduced-motion:no-preference) {
+  [letter-animation=hover]:hover>span {
     display: inline-block;
+    transform: scale(.75) perspective(1px)
+  }
+
+  [letter-animation=hover]>span {
+    transition: transform .3s ease;
+    cursor: pointer;
+    will-change: transform
+  }
+
+  [letter-animation=hover]>span:hover {
+    transform: scale(1.25) perspective(1px)
+  }
 }
+    
 
 
 </style>
 
 <div class="container-hero">
-    <h1 class="ml13">
+    <h1 split-by="letter" letter-animation="hover">
         2KVIBES
     </h1>   
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        var textWrapper = document.querySelector('.ml13');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+   
+        const span = (text, index) => {
+  const node = document.createElement('span')
 
+  node.textContent = text
+  node.style.setProperty('--index', index)
+  
+  return node
+}
+
+const byLetter = text =>
+  [...text].map(span)
+
+const {matches:motionOK} = window.matchMedia(
+  '(prefers-reduced-motion: no-preference)'
+)
+
+if (motionOK) {
+  const splitTargets = document.querySelectorAll('[split-by]')
+
+  splitTargets.forEach(node => {
+    let nodes = byLetter(node.innerText)
+
+    if (nodes)
+      node.firstChild.replaceWith(...nodes)
+  })
+}
+   
         
-        anime.timeline({loop: false})
-        .add({
-            targets: '.ml13 .letter',
-            translateY: [100,0],
-            translateZ: 0,
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 1400,
-            delay: (el, i) => 300 + 30 * i
-        });
-
-        // document.querySelectorAll('.ml13 .letter').forEach(letter => {
-        //     letter.addEventListener('mouseenter', () => {
-        //         anime({
-        //             targets: '.ml13 .letter',
-        //             translateY: [100,0],
-        //             translateZ: 0,
-        //             opacity: [0,1],
-        //             easing: "easeOutExpo",
-        //             duration: 1400
-        //         })
-        //     })
-        // })
-        })
 
 
 
