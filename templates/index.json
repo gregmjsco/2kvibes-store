@@ -17,6 +17,64 @@
       "type": "vibes-hero",
       "settings": {}
     },
+    "vibes_carousel_Gr3tHG": {
+      "type": "vibes-carousel",
+      "blocks": {
+        "product_XdfGp3": {
+          "type": "product",
+          "settings": {
+            "product": "crop-hoodie-1",
+            "title": ""
+          }
+        },
+        "product_tnDKVE": {
+          "type": "product",
+          "settings": {
+            "product": "smoke-graphic-womens-spaghetti-strap-tank-top-casual-summer-wear",
+            "title": ""
+          }
+        },
+        "product_bzaDxr": {
+          "type": "product",
+          "settings": {
+            "product": "thirsty-graphic-unisex-tee-edgy-design-for-creative-souls",
+            "title": ""
+          }
+        },
+        "product_7tM8nR": {
+          "type": "product",
+          "settings": {
+            "product": "dive-graphic-unisex-tee-ocean-vibes-t-shirt",
+            "title": ""
+          }
+        },
+        "product_fXczQK": {
+          "type": "product",
+          "settings": {
+            "product": "nothing-matters-unisex-jersey-tee-minimalist-graphic-t-shirt-for-everyday-wear",
+            "title": ""
+          }
+        },
+        "product_Xh9n8Q": {
+          "type": "product",
+          "settings": {
+            "product": "love-you-to-love-me-crop-hoodie-cozy-stylish-streetwear",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_XdfGp3",
+        "product_tnDKVE",
+        "product_bzaDxr",
+        "product_7tM8nR",
+        "product_fXczQK",
+        "product_Xh9n8Q"
+      ],
+      "settings": {
+        "number_slider_desktop": 1
+      }
+    },
     "all-products": {
       "type": "featured-collection",
       "settings": {
@@ -46,5 +104,10 @@
       }
     }
   },
-  "order": ["vibes_gradient_YAmNdH", "vibes-hero-splt", "all-products"]
+  "order": [
+    "vibes_gradient_YAmNdH",
+    "vibes-hero-splt",
+    "vibes_carousel_Gr3tHG",
+    "all-products"
+  ]
 }
