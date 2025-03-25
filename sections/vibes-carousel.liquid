@@ -39,6 +39,10 @@
         margin: 0 auto;
     }
 
+    button {
+        font-family: "Neuropolitical", sans-serif;
+    }
+
     .glider__container .prev,
     .glider__container .next {
         position: absolute; 
@@ -58,11 +62,12 @@
     }
 
     .glider__container .prev {
-        transform: translateY(-50%) rotate(180deg);
+        transform: rotate(90deg);
         left: 5px;
     }
 
     .glider__container .next {
+        transform: rotate(-90deg);
         right: 5px;
     }
 
@@ -95,12 +100,8 @@
     </div>
     
 
-    <button class="prev" aria-label="Previous slide">
-        {{ 'icon-arrow.svg' | inline_asset_content }}
-    </button>
-    <button class="next" aria-label="Next slide">
-        {{ 'icon-arrow.svg' | inline_asset_content }}
-    </button>
+    <button class="prev" aria-label="Previous slide">V</button>
+    <button class="next" aria-label="Next slide">V</button>
     
 </div>
 
