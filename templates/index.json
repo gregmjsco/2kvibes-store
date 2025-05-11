@@ -60,12 +60,14 @@
         "product_4JT9A9",
         "product_KEpCUQ"
       ],
+      "disabled": true,
       "settings": {
         "number_slider_desktop": 1
       }
     },
     "all-products": {
       "type": "featured-collection",
+      "custom_css": [],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -73,13 +75,13 @@
         "show_description": true,
         "description_style": "subtitle",
         "collection": "all",
-        "products_to_show": 25,
+        "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-8e34f56b-cf60-48ed-872d-7cb92f1fe842",
+        "color_scheme": "scheme-3",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
