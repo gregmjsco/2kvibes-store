@@ -11,9 +11,7 @@
   "sections": {
     "vibes-hero-splt": {
       "type": "vibes-hero",
-      "custom_css": [
-        "h1 {color: black;}"
-      ],
+      "custom_css": [],
       "settings": {}
     },
     "vibes_carousel_Gr3tHG": {
