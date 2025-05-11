@@ -19,56 +19,48 @@
     "vibes_carousel_Gr3tHG": {
       "type": "vibes-carousel",
       "blocks": {
-        "product_XdfGp3": {
+        "product_k4hK9D": {
           "type": "product",
           "settings": {
-            "product": "crop-hoodie-1",
+            "product": "daddy-unisex-super-heavyweight-oversized-faded-sweatshirt-1",
             "title": ""
           }
         },
-        "product_tnDKVE": {
+        "product_aEXYqw": {
           "type": "product",
           "settings": {
-            "product": "smoke-graphic-womens-spaghetti-strap-tank-top-casual-summer-wear",
+            "product": "welcome-to-world-womens-crop-top-t-shirt",
             "title": ""
           }
         },
-        "product_bzaDxr": {
+        "product_FVq6fp": {
           "type": "product",
           "settings": {
-            "product": "thirsty-graphic-unisex-tee-edgy-design-for-creative-souls",
+            "product": "shes-all-i-wanna-be-womens-snow-wash-crop-top-t-shirt",
             "title": ""
           }
         },
-        "product_7tM8nR": {
+        "product_4JT9A9": {
           "type": "product",
           "settings": {
-            "product": "dive-graphic-unisex-tee-ocean-vibes-t-shirt",
+            "product": "believe-unisex-super-heavyweight-oversized-faded-sweatshirt",
             "title": ""
           }
         },
-        "product_fXczQK": {
+        "product_KEpCUQ": {
           "type": "product",
           "settings": {
-            "product": "nothing-matters-unisex-jersey-tee-minimalist-graphic-t-shirt-for-everyday-wear",
-            "title": ""
-          }
-        },
-        "product_Xh9n8Q": {
-          "type": "product",
-          "settings": {
-            "product": "love-you-to-love-me-crop-hoodie-cozy-stylish-streetwear",
+            "product": "thirsty-unisex-super-heavyweight-sun-faded-hoodie-1",
             "title": ""
           }
         }
       },
       "block_order": [
-        "product_XdfGp3",
-        "product_tnDKVE",
-        "product_bzaDxr",
-        "product_7tM8nR",
-        "product_fXczQK",
-        "product_Xh9n8Q"
+        "product_k4hK9D",
+        "product_aEXYqw",
+        "product_FVq6fp",
+        "product_4JT9A9",
+        "product_KEpCUQ"
       ],
       "settings": {
         "number_slider_desktop": 1
